@@ -36,7 +36,7 @@
 
 /* IMPORTANT: One of the following flags must be defined in the preprocessor */
 /* options in order to select the target board revision: !!!!!!!!!! */
-#define USE_STM32469I_DISCO_REVC
+#define USE_STM32469I_DISCO_REVB
 /* USE_STM32469I_DISCO_REVA */
 /* USE_STM32469I_DISCO_REVB */
 /* USE_STM32469I_DISCO_REVC */

@@ -231,16 +231,16 @@ uint8_t BSP_LCD_InitEx(LCD_OrientationTypeDef orientation)
   
   HAL_DSI_DeInit(&(hdsi_eval));
   
-//#if !defined(USE_STM32469I_DISCO_REVA)
+#if !defined(USE_STM32469I_DISCO_REVA)
   dsiPllInit.PLLNDIV  = 125;
   dsiPllInit.PLLIDF   = DSI_PLL_IN_DIV2;
   dsiPllInit.PLLODF   = DSI_PLL_OUT_DIV1;
-  /*
+  
 #else  
   dsiPllInit.PLLNDIV  = 100;
   dsiPllInit.PLLIDF   = DSI_PLL_IN_DIV5;
   dsiPllInit.PLLODF   = DSI_PLL_OUT_DIV1;
-#endif*/
+#endif
   laneByteClk_kHz = 62500; /* 500 MHz / 8 = 62.5 MHz = 62500 kHz */
   
   /* Set number of Lanes */
@@ -434,7 +434,7 @@ void BSP_LCD_Reset(void)
     /* Push Pull Mode is required for TechShine LCD (NT35510) */
     gpio_init_structure.Mode  = GPIO_MODE_OUTPUT_PP;
 #else
-  //  gpio_init_structure.Mode  = GPIO_MODE_OUTPUT_OD;
+    gpio_init_structure.Mode  = GPIO_MODE_OUTPUT_OD;
 #endif
     gpio_init_structure.Pull  = GPIO_NOPULL;
     gpio_init_structure.Speed = GPIO_SPEED_HIGH;
