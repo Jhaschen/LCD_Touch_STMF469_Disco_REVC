@@ -36,10 +36,10 @@
 
 /* IMPORTANT: One of the following flags must be defined in the preprocessor */
 /* options in order to select the target board revision: !!!!!!!!!! */
-#define USE_STM32469I_DISCO_REVB
-/* USE_STM32469I_DISCO_REVA */
-/* USE_STM32469I_DISCO_REVB */
-/* USE_STM32469I_DISCO_REVC */
+#define USE_STM32469I_DISCO_REVA
+/* USE_STM32469I_DISCO_REVA */// B-01
+/* USE_STM32469I_DISCO_REVB */// B-02
+/* USE_STM32469I_DISCO_REVC */// AU01
 
 /* Define to prevent recursive inclusion -------------------------------------*/
 #ifndef __STM32469I_DISCOVERY_H
