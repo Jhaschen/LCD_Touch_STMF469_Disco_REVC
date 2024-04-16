@@ -6,5 +6,6 @@ BUILD
 compile_commands.json
 .clangd
 .cache
-mbed-os
-BSP_DISCO_F469NI
+resources
+BUILD
+.github
