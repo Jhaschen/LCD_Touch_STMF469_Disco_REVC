@@ -21,7 +21,7 @@
 // Constructor
 TS_DISCO_F469NI::TS_DISCO_F469NI()
 {
-  BSP_TS_Init(100, 100);
+  //BSP_TS_Init(100, 100);
 }
 
 // Destructor
