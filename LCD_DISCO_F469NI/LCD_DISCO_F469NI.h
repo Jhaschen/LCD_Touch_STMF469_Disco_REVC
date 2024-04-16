@@ -16,6 +16,8 @@
 * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 */
 
+// In der Headerdatei stm32f469i_discovery.h unter ... anpassen!!
+
 #ifndef __LCD_DISCO_F469NI_H
 #define __LCD_DISCO_F469NI_H
 

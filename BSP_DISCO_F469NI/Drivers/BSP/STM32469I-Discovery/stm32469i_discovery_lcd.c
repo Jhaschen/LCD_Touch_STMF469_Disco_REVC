@@ -235,12 +235,14 @@ uint8_t BSP_LCD_InitEx(LCD_OrientationTypeDef orientation)
   dsiPllInit.PLLNDIV  = 125;
   dsiPllInit.PLLIDF   = DSI_PLL_IN_DIV2;
   dsiPllInit.PLLODF   = DSI_PLL_OUT_DIV1;
+
   
 //#else  
   //dsiPllInit.PLLNDIV  = 100;
  // dsiPllInit.PLLIDF   = DSI_PLL_IN_DIV5;
   //dsiPllInit.PLLODF   = DSI_PLL_OUT_DIV1;
 //#endif
+
   laneByteClk_kHz = 62500; /* 500 MHz / 8 = 62.5 MHz = 62500 kHz */
   
   /* Set number of Lanes */
